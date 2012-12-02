@@ -60,6 +60,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Homework Rubrics\materials.d\Controller.cpp" />
+    <ClCompile Include="..\..\Homework Rubrics\materials.d\StarbucksMap.cpp" />
+    <ClCompile Include="..\..\Homework Rubrics\materials.d\Tester.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Homework Rubrics\materials.d\Graph.h" />
+    <ClInclude Include="..\..\Homework Rubrics\materials.d\GraphAlgs.h" />
+    <ClInclude Include="..\..\Homework Rubrics\materials.d\ListGraph.h" />
+    <ClInclude Include="..\..\Homework Rubrics\materials.d\MatrixGraph.h" />
+    <ClInclude Include="..\..\Homework Rubrics\materials.d\StarbucksMap.h" />
+    <ClInclude Include="..\..\Homework Rubrics\materials.d\Tester.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Homework Rubrics\materials.d\Starbucks.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
