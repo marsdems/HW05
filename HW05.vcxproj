@@ -60,20 +60,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Homework Rubrics\materials.d\Controller.cpp" />
-    <ClCompile Include="..\..\Homework Rubrics\materials.d\StarbucksMap.cpp" />
-    <ClCompile Include="..\..\Homework Rubrics\materials.d\Tester.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Homework Rubrics\materials.d\Graph.h" />
-    <ClInclude Include="..\..\Homework Rubrics\materials.d\GraphAlgs.h" />
-    <ClInclude Include="..\..\Homework Rubrics\materials.d\ListGraph.h" />
-    <ClInclude Include="..\..\Homework Rubrics\materials.d\MatrixGraph.h" />
-    <ClInclude Include="..\..\Homework Rubrics\materials.d\StarbucksMap.h" />
-    <ClInclude Include="..\..\Homework Rubrics\materials.d\Tester.h" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="GraphAlgs.cpp" />
+    <ClCompile Include="ListGraph.cpp" />
+    <ClCompile Include="MatrixGraph.cpp" />
+    <ClCompile Include="StarbucksMap.cpp" />
+    <ClCompile Include="Tester.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\Homework Rubrics\materials.d\Starbucks.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="GraphAlgs.h" />
+    <ClInclude Include="ListGraph.h" />
+    <ClInclude Include="MatrixGraph.h" />
+    <ClInclude Include="StarbucksMap.h" />
+    <ClInclude Include="Tester.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
