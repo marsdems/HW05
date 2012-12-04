@@ -1,6 +1,6 @@
 /**********************************************************
 * Mike Marsden
-* HW05 - Traveling Sales Person 
+* HW05 - Traveling Salesperson Problem 
 * ListGraph.cpp
 **********************************************************/
 #include "ListGraph.h"

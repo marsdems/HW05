@@ -1,6 +1,6 @@
 /**********************************************************
 * Mike Marsden
-* HW05 - Traveling Sales Person 
+* HW05 - Traveling Salesperson Problem 
 * MatrixGraph.cpp
 **********************************************************/
 #include "MatrixGraph.h"
@@ -43,14 +43,13 @@ std::list<NWPair> MatrixGraph::getAdj(NodeID u) const {
 			adjs.push_back(NWPair(i, M[u][i]));
 		}
 	}
-
 	return adjs;
 }
 
 unsigned MatrixGraph::degree(NodeID u) const {
 	unsigned degree = 0;
 	for (int i = 0; i < M.size(); i++) {
-		// Will increment if a weight is found
+		// Will increment only if a "weight" is found
 		if (M[u][i] != 0) {
 			degree++;
 		}
