@@ -15,8 +15,13 @@ ListGraph::ListGraph(int numNodes) {
 //Destructor
 ListGraph::~ListGraph() { }
 
-void ListGraph::addEdge(NodeID u, NodeID v, EdgeWeight weight) {
-
+void ListGraph::addEdge(NodeID u, NodeID v, EdgeWeight weight)
+{
+	// Referenced Brandon Sonodabe's method to get the proper 
+	// format of the push_back lines. 
+	edgeList[u].push_back(std::make_pair(v, weight));
+	edgeList[v].push_back(std::make_pair(u, weight));
+	num_edges++;
 }
 
 EdgeWeight ListGraph::weight(NodeID u, NodeID v) const {
@@ -36,7 +41,12 @@ std::list<NWPair> ListGraph::getAdj(NodeID u) const {
 }
 
 unsigned ListGraph::degree(NodeID u) const {
-
+	unsigned degree;
+	// To ensure that u is within EdgeList
+	if (u < edgeList.size()) {
+		degree = edgeList.at(u).size();
+	}
+	return degree;
 }
 
 unsigned ListGraph::size() const {

@@ -25,12 +25,16 @@ EdgeWeight MatrixGraph::weight(NodeID u, NodeID v) const {
 	return eW;
 }
 
+std::list<NWPair> MatrixGraph::getAdj(NodeID u) const {
+
+}
+
 unsigned MatrixGraph::degree(NodeID u) const {
 
 }
 
 unsigned MatrixGraph::size() const {
-	M.size();
+	return M.size();
 }
 
 unsigned MatrixGraph::numEdges() const {
