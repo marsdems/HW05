@@ -21,3 +21,9 @@
  */
 
 std::pair<std::vector<NodeID>, EdgeWeight> TSP(Graph* G);
+
+//search method described in class lecture notes
+void tour(NodeID* arr, int n, int startingPoint);
+
+//Simple swap method to assist the tour method.
+void swap(NodeID* arr, int n1, int n2);
